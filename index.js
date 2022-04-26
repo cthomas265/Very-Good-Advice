@@ -29,6 +29,31 @@ const questions = [{
         message: "Please select a license, if any.",
         choices: ["MIT", "Apache", "GPL", "BSD", "None"]
     },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Please provide any contributors and/or collaborators for your project.",
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Please provide instructions for running tests for your project.",
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Please provide instructions for how to use your project.",
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "What is your github username?",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email address?",
+    },
 ];
 
 // TODO: Create a function to write README file
@@ -37,13 +62,13 @@ const questions = [{
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(function (response) {
-                fs.writeFileSync("README3.md", generateMarkdown(response), function (err) {
-                    if (err) {
-                        throw err;
-                    };
-                })
+        fs.writeFileSync("README15.md", generateMarkdown(response), function (err) {
+            if (err) {
+                throw err;
+            };
+        })
 
-            }
-    )};
-            // Function call to initialize app
-            init();
+    })
+};
+// Function call to initialize app
+init();
