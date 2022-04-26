@@ -7,22 +7,22 @@
 5. [Tests](#tests)
 6. [Questions](#questions)
 ## Description:
-npd
+fjd
 ## Installation:
 npm i
 ## License Link:
 BSD 3-Clause License
 (https://opensource.org/licenses/BSD-3-Clause)
 ## Contributing:
-no
+fd
 ## Tests:
-no
+df
 ## Questions? 
 ### Email / ### Github
 Please contact me with any question
 
 *Email:
-asf@gmail.com
+cmthomas289@gmail.com
 
 *Github:
-https://github.com/csddr4
+https://github.com/cthomas265

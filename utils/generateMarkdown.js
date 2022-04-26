@@ -26,12 +26,24 @@ function renderLicenseLink(license) {
   } else if (license === "BSD") {
     return "(https://opensource.org/licenses/BSD-3-Clause)";
   } else { license === "None"
-    return "No license specified";
+    return "No license link specified";
   }
 }
   // TODO: Create a function that returns the license section of README
   // If there is no license, return an empty string
-  // function renderLicenseSection(license) {}
+  function renderLicenseSection(license) {
+    if (license === "MIT") {
+      return "MIT License";
+    } else if (license === "Apache") {
+      return "Apache License 2.0";
+    } else if (license === "GPL") {
+      return "GNU General Public License v3";
+    } else if (license === "BSD") {
+      return "BSD 3-Clause License";
+    } else {
+      return "No license specified";
+    }
+  }
 
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
@@ -48,6 +60,7 @@ ${data.description}
 ## Installation:
 ${data.installation}
 ## License Link:
+${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
 ## Contributing:
 ${data.contributing}

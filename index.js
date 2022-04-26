@@ -62,7 +62,7 @@ const questions = [{
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(function (response) {
-        fs.writeFileSync("README15.md", generateMarkdown(response), function (err) {
+        fs.writeFileSync("README16.md", generateMarkdown(response), function (err) {
             if (err) {
                 throw err;
             };
